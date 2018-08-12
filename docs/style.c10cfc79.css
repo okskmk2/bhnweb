@@ -1,0 +1,22 @@
+a{
+    text-decoration: none;
+    color:initial; /*TODO 색상변경 필요*/
+}
+
+.wrap{
+    width: 60rem;
+    margin: 0 auto;
+}
+
+header{
+    padding:0.5rem 0;
+    border-bottom: 2px solid rgb(153, 51, 139);
+}
+
+/* .router-link-active{
+    color: blueviolet;
+} */
+
+.router-link-exact-active{
+    color:rgb(194, 32, 132);
+}
