@@ -10223,11 +10223,11 @@ exports.default = {};
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticStyle: { "margin-top": "1rem" } },
+    { staticClass: "row", staticStyle: { "margin-top": "1rem" } },
     [
       _c(
         "nav",
-        { attrs: { id: "home-nav" } },
+        { staticClass: "col", attrs: { id: "home-nav" } },
         [
           _c("router-link", { attrs: { to: "/vision" } }, [_vm._v("비전보드")]),
           _vm._v(" "),
@@ -10238,7 +10238,7 @@ exports.default = {};
         1
       ),
       _vm._v(" "),
-      _c("router-view")
+      _c("router-view", { staticClass: "rest" })
     ],
     1
   )
@@ -10715,6 +10715,84 @@ render._withStripped = true
         
       }
     })();
+},{"vue-hot-reload-api":"node_modules\\vue-hot-reload-api\\dist\\index.js","vue":"node_modules\\vue\\dist\\vue.runtime.esm.js"}],"view\\ProjectList.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {};
+        var $a0956f = exports.default || module.exports;
+      
+      if (typeof $a0956f === 'function') {
+        $a0956f = $a0956f.options;
+      }
+    
+        /* template */
+        Object.assign($a0956f, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h3", [_vm._v("프로젝트 리스트")]),
+      _vm._v(" "),
+      _c("ul", [
+        _c("li", [_vm._v("지구 살리기 프로젝트")]),
+        _vm._v(" "),
+        _c("li", [_vm._v("유학을 위한 영어 스터디")]),
+        _vm._v(" "),
+        _c("li", [_vm._v("새로운 패션 디자인 프로젝트")])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$a0956f', $a0956f);
+          } else {
+            api.reload('$a0956f', $a0956f);
+          }
+        }
+
+        
+      }
+    })();
 },{"vue-hot-reload-api":"node_modules\\vue-hot-reload-api\\dist\\index.js","vue":"node_modules\\vue\\dist\\vue.runtime.esm.js"}],"view\\Plan.vue":[function(require,module,exports) {
 "use strict";
 
@@ -11043,6 +11121,10 @@ var _Project = require('../view/Project.vue');
 
 var _Project2 = _interopRequireDefault(_Project);
 
+var _ProjectList = require('../view/ProjectList.vue');
+
+var _ProjectList2 = _interopRequireDefault(_ProjectList);
+
 var _Plan = require('../view/Plan.vue');
 
 var _Plan2 = _interopRequireDefault(_Plan);
@@ -11065,11 +11147,11 @@ exports.default = new _vueRouter2.default({
         path: '/', component: _Home2.default,
         children: [{ path: 'vision', component: _Vision2.default }, { path: 'habit', component: _Habit2.default }, {
             path: 'project', component: _Project2.default,
-            children: [{ path: 'plan', component: _Plan2.default }, { path: 'activity', component: _Activity2.default }, { path: 'result', component: _Result2.default }]
+            children: [{ path: '', component: _ProjectList2.default }, { path: 'plan', component: _Plan2.default }, { path: 'activity', component: _Activity2.default }, { path: 'result', component: _Result2.default }]
         }]
     }, { path: '/settings', component: _Settings2.default }, { path: '/notifications', component: _Notifications2.default }, { path: '/schedule', component: _Schedule2.default }]
 });
-},{"vue-router":"node_modules\\vue-router\\dist\\vue-router.esm.js","vue":"node_modules\\vue\\dist\\vue.runtime.esm.js","../view/Home.vue":"view\\Home.vue","../view/Notifications.vue":"view\\Notifications.vue","../view/Schedule.vue":"view\\Schedule.vue","../view/Settings.vue":"view\\Settings.vue","../view/Vision.vue":"view\\Vision.vue","../view/Habit.vue":"view\\Habit.vue","../view/Project.vue":"view\\Project.vue","../view/Plan.vue":"view\\Plan.vue","../view/Activity.vue":"view\\Activity.vue","../view/Result.vue":"view\\Result.vue"}],"node_modules\\axios\\lib\\helpers\\bind.js":[function(require,module,exports) {
+},{"vue-router":"node_modules\\vue-router\\dist\\vue-router.esm.js","vue":"node_modules\\vue\\dist\\vue.runtime.esm.js","../view/Home.vue":"view\\Home.vue","../view/Notifications.vue":"view\\Notifications.vue","../view/Schedule.vue":"view\\Schedule.vue","../view/Settings.vue":"view\\Settings.vue","../view/Vision.vue":"view\\Vision.vue","../view/Habit.vue":"view\\Habit.vue","../view/Project.vue":"view\\Project.vue","../view/ProjectList.vue":"view\\ProjectList.vue","../view/Plan.vue":"view\\Plan.vue","../view/Activity.vue":"view\\Activity.vue","../view/Result.vue":"view\\Result.vue"}],"node_modules\\axios\\lib\\helpers\\bind.js":[function(require,module,exports) {
 'use strict';
 
 module.exports = function bind(fn, thisArg) {
@@ -29968,7 +30050,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '13625' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '7922' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

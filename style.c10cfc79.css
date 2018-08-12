@@ -37,13 +37,18 @@ header .router-link-active{
     color:rgb(194, 32, 132);
     background-color:initial;
 }
+#gnb{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 #gnb>.material-icons:not(:last-child){
     margin-right: 0.5rem;
 }
 
 #home-nav{
-    display: flex;
+    /* display: flex; */
 }
 
 #home-nav>a{
