@@ -10366,7 +10366,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h2", [_vm._v("schedule")])])
+    return _c("div", [_c("h2", [_vm._v("스케쥴")])])
   }
 ]
 render._withStripped = true
@@ -29844,7 +29844,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '8336' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '11911' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

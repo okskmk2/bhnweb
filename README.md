@@ -1,2 +1,0 @@
-# bhnweb
-vue parcel

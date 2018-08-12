@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NotoSansCJKkr-Regular');
+    src: url(NotoSansCJKkr-Regular.ef7dfe10.otf);  
+}
+
+body{
+    font-family: 'Noto Sans';
+}
 a{
     text-decoration: none;
     color:initial; /*TODO 색상변경 필요*/
