@@ -7663,7 +7663,7 @@ exports.default = {};
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("header", [
-      _c("div", { staticClass: "wrap" }, [
+      _c("div", { staticClass: "wrap", attrs: { id: "gnb" } }, [
         _c(
           "i",
           { staticClass: "material-icons" },
@@ -10223,10 +10223,11 @@ exports.default = {};
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticStyle: { "margin-top": "1rem" } },
     [
       _c(
         "nav",
-        { staticClass: "wrap" },
+        { attrs: { id: "home-nav" } },
         [
           _c("router-link", { attrs: { to: "/vision" } }, [_vm._v("비전보드")]),
           _vm._v(" "),
@@ -10433,7 +10434,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("h2", [_vm._v("settings")]),
+      _c("h2", [_vm._v("설정")]),
       _vm._v(" "),
       _c("ul", [_c("li", [_vm._v("계정설정")])])
     ])
@@ -10478,6 +10479,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {};
         var $752284 = exports.default || module.exports;
@@ -10492,9 +10503,32 @@ exports.default = {};
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    vision\n")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col main-height" }, [
+      _c("div", { staticClass: "row rest" }, [
+        _c("div", { staticClass: "rest box" }, [_vm._v("왼쪽")]),
+        _vm._v(" "),
+        _c("nav", { staticClass: "right-nav" }, [
+          _c("ul", [
+            _c("li", [_vm._v("그림")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("펜")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("스티커")])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", [_vm._v("화살표")])
+    ])
+  }
+]
 render._withStripped = true
 
           return {
@@ -10534,6 +10568,9 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
 
 exports.default = {};
         var $c41381 = exports.default || module.exports;
@@ -10548,9 +10585,21 @@ exports.default = {};
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    habit\n")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "main-height box" }, [
+      _c("div", [_vm._v("\n        목록영역\n    ")]),
+      _vm._v(" "),
+      _c("input", { attrs: { type: "text" } }),
+      _c("a", [_vm._v("입력")])
+    ])
+  }
+]
 render._withStripped = true
 
           return {
@@ -10595,7 +10644,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
 
 exports.default = {};
         var $725981 = exports.default || module.exports;
@@ -10612,9 +10660,11 @@ exports.default = {};
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "main-height box" },
     [
       _c(
         "nav",
+        { staticClass: "project-nav" },
         [
           _c("router-link", { attrs: { to: "/project/plan" } }, [
             _vm._v("기획")
@@ -10736,7 +10786,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
 
 exports.default = {};
         var $1a8970 = exports.default || module.exports;
@@ -10759,13 +10808,16 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _vm._v("\n    활동\n    "),
-      _c("ul", [
-        _c("li", [_vm._v("스케쥴")]),
+      _c("div", { staticClass: "row equal" }, [
+        _c("div", [
+          _c("h3", { staticClass: "text-center" }, [_vm._v("스케쥴")])
+        ]),
         _vm._v(" "),
-        _c("li", [_vm._v("참여자")]),
+        _c("div", [
+          _c("h3", { staticClass: "text-center" }, [_vm._v("참여자")])
+        ]),
         _vm._v(" "),
-        _c("li", [_vm._v("내용")])
+        _c("div", [_c("h3", { staticClass: "text-center" }, [_vm._v("내용")])])
       ])
     ])
   }
@@ -10802,8 +10854,34 @@ render._withStripped = true
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -10835,15 +10913,61 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("h2", [_vm._v("결과")]),
+    return _c("div", { staticClass: "row equal" }, [
+      _c("div", { staticClass: "box" }, [
+        _c("h3", { staticClass: "text-center" }, [_vm._v("결과보고")])
+      ]),
       _vm._v(" "),
-      _c("ul", [
-        _c("li", [_vm._v("리포트")]),
+      _c("div", { staticClass: "box" }, [
+        _c("h3", { staticClass: "text-center" }, [_vm._v("팀 피드백")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "box" }, [
+        _c("h3", { staticClass: "text-center" }, [_vm._v("열린 피드백")]),
         _vm._v(" "),
-        _c("li", [_vm._v("팀 피드백")]),
-        _vm._v(" "),
-        _c("li", [_vm._v("로비")])
+        _c("div", { staticClass: "row equal" }, [
+          _c("div", [
+            _c("h4", { staticClass: "text-center" }, [_vm._v("후원명단")]),
+            _vm._v(" "),
+            _c("ul", [
+              _c("li", [_vm._v("aasdfasd")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("asdfasdfasd")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("aasdfasd")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("asdfasdfasd")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("asdfasdfasd")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("afasdfasd")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("asdfasdfasd")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _c("h4", { staticClass: "text-center" }, [_vm._v("앵콜")]),
+            _vm._v(" "),
+            _c("ul", [
+              _c("li", [_vm._v("dfsdfsdfsdf")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("dfsdfsdfsdf")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("dfsdfsdfsdf")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("dfsdfsdfsdf")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("dfsdfsdfsdf")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("dfsdfsdfsdf")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("dfsdfsdfsdf")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("dfsdfsdfsdf")])
+            ])
+          ])
+        ])
       ])
     ])
   }
@@ -29844,7 +29968,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '11911' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '13625' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

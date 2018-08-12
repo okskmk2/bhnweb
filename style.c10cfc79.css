@@ -9,13 +9,14 @@
 body{
     font-family: 'Noto Sans';
 }
+
 a{
     text-decoration: none;
     color:initial; /*TODO 색상변경 필요*/
 }
 
 .wrap{
-    width: 60rem;
+    width: 70rem;
     margin: 0 auto;
 }
 
@@ -27,7 +28,67 @@ header{
 /* .router-link-active{
     color: blueviolet;
 } */
+.router-link-active{
+    color:white;
+    background-color:rgb(194, 32, 132);
+}
 
-.router-link-exact-active{
+header .router-link-active{
     color:rgb(194, 32, 132);
+    background-color:initial;
+}
+
+#gnb>.material-icons:not(:last-child){
+    margin-right: 0.5rem;
+}
+
+#home-nav{
+    display: flex;
+}
+
+#home-nav>a{
+    padding: 0.5rem 2rem;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+}
+
+.rest{
+    flex-grow: 1;
+}
+
+.right-nav{
+    width: 7rem;
+    background-color: #ccc;
+}
+
+.box{
+    border:1px solid #ccc;
+}
+
+.main-height{
+    height:75vh;
+}
+
+.project-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-nav>a{
+    padding:0.5rem 2rem;
+}
+
+.equal>div{
+    flex-grow: 1;
+}
+
+.text-center{
+    text-align: center;
 }
