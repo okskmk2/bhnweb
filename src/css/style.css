@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NotoSansCJKkr-Regular');
+    src: url(../font/NotoSansCJKkr-Regular.otf);  
+}
+
+.material-icons{
+    vertical-align: top;
+}
+
+body{
+    font-family: 'Noto Sans';
+    color:#333;
+    margin: 0;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color:initial; /*TODO 색상변경 필요*/
+}
+
+.wrap{
+    width: 75rem;
+    margin: 0 auto;
+    padding:0 1rem;
+}
+
+header{
+    padding:0.5rem 0;
+    border-top: 3px solid rgb(153, 51, 139);
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+}
+
+footer{
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding:0.75rem 0;
+}
+
+h1, h2{
+    margin: 0;
+    display: inline;
+}
+
+#gnb{
+    display: flex;
+    margin-left: 2rem;
+}
+
+#gnb>a{
+    margin-left: 1rem;
+}
+
+#main{
+    flex-grow: 1;
+}
+
+.control-box{
+    text-align: right;
+}
+
+
+
+/* layout */
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.jc-between{
+    justify-content: space-between;
+}
+
+.ai-center{
+    align-items: center;
+}
+
+.rest{
+    flex-grow: 1;
+}
+
+.gap1>*:not(:last-child){
+    margin-right: 1rem;
+}
+
+.mr05{
+    margin-right: 0.5rem;
+}
